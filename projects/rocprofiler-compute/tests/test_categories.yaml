@@ -17,6 +17,7 @@ test_categories:
       - test_utils_common
       - test_utils_analysis
       - test_utils_profile
+      - test_sdk_config
       - test_common
       - test_amdsmi_interface
       - test_benchmark_base
@@ -107,6 +108,7 @@ test_categories:
       - test_utils_common
       - test_utils_analysis
       - test_utils_profile
+      - test_sdk_config
       - test_common
       - test_amdsmi_interface
       - test_benchmark_base
@@ -215,6 +217,7 @@ test_categories:
       - test_utils_common
       - test_utils_analysis
       - test_utils_profile
+      - test_sdk_config
       - test_common
       - test_amdsmi_interface
       - test_benchmark_base
@@ -323,6 +326,7 @@ test_categories:
       - test_utils_common
       - test_utils_analysis
       - test_utils_profile
+      - test_sdk_config
       - test_common
       - test_amdsmi_interface
       - test_benchmark_base
