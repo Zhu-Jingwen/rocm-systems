@@ -551,6 +551,13 @@ add_test(
 )
 
 add_test(
+    NAME test_sdk_config
+    COMMAND
+        ${PYTHON_TEST_COMMAND} -m pytest --junitxml=tests/test_sdk_config.xml
+        ${COV_OPTION} tests/unit/rocprof_compute_soc/profile_configs/test_sdk_config.py
+        ${WORKING_DIR_OPTION}
+)
+add_test(
     NAME test_common
     COMMAND
         ${PYTHON_TEST_COMMAND} -m pytest --junitxml=tests/test_common.xml ${COV_OPTION}

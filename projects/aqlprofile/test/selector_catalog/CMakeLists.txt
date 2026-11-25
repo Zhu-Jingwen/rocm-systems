@@ -1,0 +1,15 @@
+# Copyright (c) Advanced Micro Devices, Inc.
+# SPDX-License-Identifier: MIT
+cmake_minimum_required(VERSION 3.16)
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    project(aqlprofile_selector_catalog LANGUAGES C CXX)
+    enable_testing()
+endif()
+add_executable(aqlprofile-selector-c selector_catalog.c)
+add_executable(aqlprofile-selector-cxx selector_catalog.cpp)
+target_compile_features(aqlprofile-selector-c PRIVATE c_std_11)
+target_compile_features(aqlprofile-selector-cxx PRIVATE cxx_std_17)
+target_include_directories(aqlprofile-selector-c PRIVATE ../..)
+target_include_directories(aqlprofile-selector-cxx PRIVATE ../..)
+add_test(NAME aqlprofile-selector-c COMMAND aqlprofile-selector-c)
+add_test(NAME aqlprofile-selector-cxx COMMAND aqlprofile-selector-cxx)
